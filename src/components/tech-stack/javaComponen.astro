@@ -2,23 +2,23 @@
 const items = ["./tech-stack/java.jpg"];
 ---
 
-<div class="javaDetail">
+<div class="javaComponen">
 	{
 		items.map((item) => (
-			<img loading="lazy" class="javaDetail" src={item} alt="java detail " />
+			<img loading="lazy" class="javaComponen" src={item} alt="java detail " />
 		))
 	}
 </div>
 
 <style>
-	.javaDetail {
+	.javaComponen {
 		display: flex;
 		justify-content: center;
 		gap: 12px;
 		cursor: auto;
 	}
 	@media (max-width: 768px) {
-		.javaDetail {
+		.javaComponen {
 			display: flex;
 			width: 55%;
 			justify-content: left;

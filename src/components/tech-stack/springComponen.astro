@@ -1,29 +1,29 @@
 ---
-const items = ["./tech-stack/postgresql.jpg"];
+const items = ["./tech-stack/springboot.jpg"];
 ---
 
-<div class="PostgreSQLDetail">
+<div class="springComponen">
 	{
 		items.map((item) => (
 			<img
 				loading="lazy"
-				class="PostgreSQLDetail"
+				class="springComponen"
 				src={item}
-				alt="postgre detail "
+				alt="springComponen"
 			/>
 		))
 	}
 </div>
 
 <style>
-	.PostgreSQLDetail {
+	.springComponen {
 		display: flex;
 		justify-content: center;
 		gap: 12px;
 		cursor: auto;
 	}
 	@media (max-width: 768px) {
-		.PostgreSQLDetail {
+		.springComponen {
 			display: flex;
 			width: 55%;
 			justify-content: left;

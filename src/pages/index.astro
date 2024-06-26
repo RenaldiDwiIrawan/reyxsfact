@@ -8,10 +8,9 @@ import CTA from "../components/CTA.astro";
 import Contact from "../components/Contact.astro";
 
 //Tech Stack components
-import Anaren from "../components/Anaren.astro";
-import Java from "../components/tech-stack/java.astro";
-import Springboot from "../components/tech-stack/springBootDetail.astro";
-import PostgreSql from "../components/tech-stack/postgreDetail.astro";
+import Java from "../components/tech-stack/javaComponen.astro";
+import Spring from "../components/tech-stack/springComponen.astro";
+import Pgadmin from "../components/tech-stack/postgreComponen.astro";
 //Project Components
 import Python from "../components/Python.astro";
 ---
@@ -20,7 +19,9 @@ import Python from "../components/Python.astro";
 	<div id="contents">
 		<main class="container">
 			<div class="mb-16">
+				<br />
 				<Heading />
+				<br />
 				<p
 					class="mt-4 text-lg text-zinc-500 dark:text-zinc-400 font-light lg:text-xl"
 				>
@@ -34,52 +35,6 @@ import Python from "../components/Python.astro";
 				</p>
 			</div>
 
-			<h2
-				class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white mb-2"
-			>
-				Tech Stack
-			</h2>
-			<div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
-				<div class="">
-					<Card
-						href="java"
-						title="Java"
-						body="Bahasa multi-platform, berorientasi objek, dan berpusat pada jaringan yang dapat digunakan sebagai platform tersendiri ."
-						tags="java"
-					>
-						<div class="max-w-full">
-							<Java />
-						</div>
-					</Card>
-				</div>
-				<div class="">
-					<Card
-						href="SpringBoot"
-						title="SpringBoot"
-						body="Java Spring Boot adalah alat sumber terbuka yang memudahkan penggunaan kerangka kerja berbasis Java untuk membuat layanan mikro dan aplikasi web"
-						tags="Springboot"
-					>
-						<div class="max-w-full">
-							<Springboot />
-						</div>
-					</Card>
-				</div>
-				<div class="">
-					<Card
-						href="PostgreSQL"
-						title="PostgreSql"
-						body="PostgreSQL adalah sistem manajemen basis data relasional (RDBMS) yang open-source dan sangat kuat. Dikembangkan oleh PostgreSQL Global Development Group, PostgreSQL menonjol karena keandalan, skalabilitas, dan kemampuan untuk menangani beban kerja yang kompleks."
-						tags="PostgreSQL"
-					>
-						<div class="max-w-full">
-							<PostgreSql />
-						</div>
-					</Card>
-				</div>
-			</div>
-			<div class="my-8 bg-black">
-				<CTA />
-			</div>
 			<h2
 				class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white mb-2"
 			>
@@ -117,6 +72,61 @@ import Python from "../components/Python.astro";
 					</Card>
 				</div>
 			</div>
+
+			<h2
+				class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white mb-2"
+			>
+				Tech Stack
+			</h2>
+			<div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+				<div class="">
+					<Card
+						href="java"
+						title="Java"
+						body="Bahasa pemrograman populer yang memungkinkan pengembangan aplikasi multiplatform dengan keamanan dan skalabilitas tinggi, serta didukung oleh ekosistem pustaka dan alat pengembangan yang luas."
+						tags="java"
+					>
+						<div class="max-w-full">
+							<Java />
+						</div>
+					</Card>
+				</div>
+				<div class="">
+					<Card
+						href="spring"
+						title="SpringBoot"
+						body="ramework yang menyederhanakan pengembangan aplikasi Java dengan konfigurasi otomatis, server embedded, dan integrasi mudah dengan berbagai teknologi melalui starter project."
+						tags="Spring"
+					>
+						<div class="max-w-full">
+							<Spring />
+						</div>
+					</Card>
+				</div>
+				<div class="">
+					<Card
+						href="postgre"
+						title="PostgreSql"
+						body="Relation Database Management System(RDBMS) yang open-source yang menawarkan keandalan, skalabilitas, dan kemampuan untuk menangani beban kerja yang kompleks."
+						tags="postgre"
+					>
+						<div class="max-w-full">
+							<Pgadmin />
+						</div>
+					</Card>
+				</div>
+				<!-- <div class="">
+					<Card href="new" title="New" body="New." tags="new">
+						<div class="max-w-full">
+							<PostgreSql />
+						</div>
+					</Card>
+				</div> -->
+			</div>
+			<!-- <div class="my-8 bg-black">
+				<CTA />
+			</div> -->
+
 			<div class="my-8">
 				<Contact />
 			</div>

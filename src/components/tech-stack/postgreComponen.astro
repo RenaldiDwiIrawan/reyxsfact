@@ -1,24 +1,29 @@
 ---
-const items = ["./tech-stack/java.jpg"];
+const items = ["./tech-stack/postgresql.jpg"];
 ---
 
-<div class="javaDetail">
+<div class="postgreComponen">
 	{
 		items.map((item) => (
-			<img loading="lazy" class="javaDetail" src={item} alt="java detail " />
+			<img
+				loading="lazy"
+				class="postgreComponen"
+				src={item}
+				alt="postgre detail "
+			/>
 		))
 	}
 </div>
 
 <style>
-	.javaDetail {
+	.postgreComponen {
 		display: flex;
 		justify-content: center;
 		gap: 12px;
 		cursor: auto;
 	}
 	@media (max-width: 768px) {
-		.javaDetail {
+		.postgreComponen {
 			display: flex;
 			width: 55%;
 			justify-content: left;
