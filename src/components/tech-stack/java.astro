@@ -1,28 +1,24 @@
 ---
-const items = [
-	"./anaren-images/1-thumb.png",
-	"./anaren-images/2-thumb.png",
-	"./anaren-images/3-thumb.png",
-];
+const items = ["./tech-stack/java.jpg"];
 ---
 
-<div class="sample">
+<div class="javaDetail">
 	{
 		items.map((item) => (
-			<img loading="lazy" class="sample" src={item} alt="Anaren sample " />
+			<img loading="lazy" class="javaDetail" src={item} alt="java detail " />
 		))
 	}
 </div>
 
 <style>
-	.sample {
+	.javaDetail {
 		display: flex;
 		justify-content: center;
 		gap: 12px;
 		cursor: auto;
 	}
 	@media (max-width: 768px) {
-		.sample {
+		.javaDetail {
 			display: flex;
 			width: 55%;
 			justify-content: left;

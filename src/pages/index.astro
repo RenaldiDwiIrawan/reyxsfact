@@ -7,8 +7,11 @@ import Heading from "../components/Heading.astro";
 import CTA from "../components/CTA.astro";
 import Contact from "../components/Contact.astro";
 
-//Professional Work Components
+//Tech Stack components
 import Anaren from "../components/Anaren.astro";
+import Java from "../components/tech-stack/java.astro";
+import Springboot from "../components/tech-stack/springBootDetail.astro";
+import PostgreSql from "../components/tech-stack/postgreDetail.astro";
 //Project Components
 import Python from "../components/Python.astro";
 ---
@@ -34,42 +37,42 @@ import Python from "../components/Python.astro";
 			<h2
 				class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white mb-2"
 			>
-				Professional Work
+				Tech Stack
 			</h2>
 			<div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
 				<div class="">
 					<Card
-						href="anaren"
-						title="Anaren.com"
-						body="A Drupal website for the space and defense company, featuring pages for their different divisions and product lines. It also includes extensive DataTables integration for their product catalog."
-						tags="Drupal, PHP, JavaScript, CSS, HTML"
+						href="java"
+						title="Java"
+						body="Bahasa multi-platform, berorientasi objek, dan berpusat pada jaringan yang dapat digunakan sebagai platform tersendiri ."
+						tags="java"
 					>
 						<div class="max-w-full">
-							<Anaren />
+							<Java />
 						</div>
 					</Card>
 				</div>
 				<div class="">
 					<Card
-						href="anaren"
-						title="Anaren.com"
-						body="A Drupal website for the space and defense company, featuring pages for their different divisions and product lines. It also includes extensive DataTables integration for their product catalog."
-						tags="Drupal, PHP, JavaScript, CSS, HTML"
+						href="SpringBoot"
+						title="SpringBoot"
+						body="Java Spring Boot adalah alat sumber terbuka yang memudahkan penggunaan kerangka kerja berbasis Java untuk membuat layanan mikro dan aplikasi web"
+						tags="Springboot"
 					>
 						<div class="max-w-full">
-							<Anaren />
+							<Springboot />
 						</div>
 					</Card>
 				</div>
 				<div class="">
 					<Card
-						href="anaren"
-						title="Anaren.com"
-						body="A Drupal website for the space and defense company, featuring pages for their different divisions and product lines. It also includes extensive DataTables integration for their product catalog."
-						tags="Drupal, PHP, JavaScript, CSS, HTML"
+						href="PostgreSQL"
+						title="PostgreSql"
+						body="PostgreSQL adalah sistem manajemen basis data relasional (RDBMS) yang open-source dan sangat kuat. Dikembangkan oleh PostgreSQL Global Development Group, PostgreSQL menonjol karena keandalan, skalabilitas, dan kemampuan untuk menangani beban kerja yang kompleks."
+						tags="PostgreSQL"
 					>
 						<div class="max-w-full">
-							<Anaren />
+							<PostgreSql />
 						</div>
 					</Card>
 				</div>
