@@ -1,29 +1,29 @@
 ---
-const items = ["./tech-stack/postgresql.jpg"];
+const items = ["./tech-stack/swagger.jpg"];
 ---
 
-<div class="postgreComponen">
+<div class="swaggerComponen">
 	{
 		items.map((item) => (
 			<img
 				loading="lazy"
-				class="postgreComponen"
+				class="swaggerComponen"
 				src={item}
-				alt="logo postgreSQL  "
+				alt="logo swagger "
 			/>
 		))
 	}
 </div>
 
 <style>
-	.postgreComponen {
+	.swaggerComponen {
 		display: flex;
 		justify-content: center;
 		gap: 12px;
 		cursor: auto;
 	}
 	@media (max-width: 768px) {
-		.postgreComponen {
+		.swaggerComponen {
 			display: flex;
 			width: 55%;
 			justify-content: left;
@@ -31,7 +31,7 @@ const items = ["./tech-stack/postgresql.jpg"];
 			gap: 12px;
 		}
 	}
-	.postgreComponen {
+	.swaggerComponen {
 		height: 200px;
 		width: auto;
 	}

@@ -1,29 +1,29 @@
 ---
-const items = ["./tech-stack/postgresql.jpg"];
+const items = ["./tech-stack/mongoDB.jpg"];
 ---
 
-<div class="postgreComponen">
+<div class="mongoDBComponen">
 	{
 		items.map((item) => (
 			<img
 				loading="lazy"
-				class="postgreComponen"
+				class="mongoDBComponen"
 				src={item}
-				alt="logo postgreSQL  "
+				alt="logo mongoDB"
 			/>
 		))
 	}
 </div>
 
 <style>
-	.postgreComponen {
+	.mongoDBComponen {
 		display: flex;
 		justify-content: center;
 		gap: 12px;
 		cursor: auto;
 	}
 	@media (max-width: 768px) {
-		.postgreComponen {
+		.mongoDBComponen {
 			display: flex;
 			width: 55%;
 			justify-content: left;
@@ -31,7 +31,7 @@ const items = ["./tech-stack/postgresql.jpg"];
 			gap: 12px;
 		}
 	}
-	.postgreComponen {
+	.mongoDBComponen {
 		height: 200px;
 		width: auto;
 	}

@@ -1,29 +1,29 @@
 ---
-const items = ["./tech-stack/postgresql.jpg"];
+const items = ["./tech-stack/microservice.jpg"];
 ---
 
-<div class="postgreComponen">
+<div class="microserviceComponen">
 	{
 		items.map((item) => (
 			<img
 				loading="lazy"
-				class="postgreComponen"
+				class="microserviceComponen"
 				src={item}
-				alt="logo postgreSQL  "
+				alt="logo microService "
 			/>
 		))
 	}
 </div>
 
 <style>
-	.postgreComponen {
+	.microserviceComponen {
 		display: flex;
 		justify-content: center;
 		gap: 12px;
 		cursor: auto;
 	}
 	@media (max-width: 768px) {
-		.postgreComponen {
+		.microserviceComponen {
 			display: flex;
 			width: 55%;
 			justify-content: left;
@@ -31,7 +31,7 @@ const items = ["./tech-stack/postgresql.jpg"];
 			gap: 12px;
 		}
 	}
-	.postgreComponen {
+	.microserviceComponen {
 		height: 200px;
 		width: auto;
 	}

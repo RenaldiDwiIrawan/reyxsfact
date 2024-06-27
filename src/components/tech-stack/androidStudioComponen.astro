@@ -1,29 +1,29 @@
 ---
-const items = ["./tech-stack/postgresql.jpg"];
+const items = ["./tech-stack/androidStudio.jpg"];
 ---
 
-<div class="postgreComponen">
+<div class="androidStudioComponen">
 	{
 		items.map((item) => (
 			<img
 				loading="lazy"
-				class="postgreComponen"
+				class="androidStudioComponen"
 				src={item}
-				alt="logo postgreSQL  "
+				alt="logo android studio "
 			/>
 		))
 	}
 </div>
 
 <style>
-	.postgreComponen {
+	.androidStudioComponen {
 		display: flex;
 		justify-content: center;
 		gap: 12px;
 		cursor: auto;
 	}
 	@media (max-width: 768px) {
-		.postgreComponen {
+		.androidStudioComponen {
 			display: flex;
 			width: 55%;
 			justify-content: left;
@@ -31,7 +31,7 @@ const items = ["./tech-stack/postgresql.jpg"];
 			gap: 12px;
 		}
 	}
-	.postgreComponen {
+	.androidStudioComponen {
 		height: 200px;
 		width: auto;
 	}

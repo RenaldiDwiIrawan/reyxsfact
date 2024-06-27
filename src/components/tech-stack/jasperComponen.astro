@@ -1,29 +1,29 @@
 ---
-const items = ["./tech-stack/postgresql.jpg"];
+const items = ["./tech-stack/jasperReport.jpg"];
 ---
 
-<div class="postgreComponen">
+<div class="jasperReportComponen">
 	{
 		items.map((item) => (
 			<img
 				loading="lazy"
-				class="postgreComponen"
+				class="jasperReportComponen"
 				src={item}
-				alt="logo postgreSQL  "
+				alt="logo jasperReport "
 			/>
 		))
 	}
 </div>
 
 <style>
-	.postgreComponen {
+	.jasperReportComponen {
 		display: flex;
 		justify-content: center;
 		gap: 12px;
 		cursor: auto;
 	}
 	@media (max-width: 768px) {
-		.postgreComponen {
+		.jasperReportComponen {
 			display: flex;
 			width: 55%;
 			justify-content: left;
@@ -31,7 +31,7 @@ const items = ["./tech-stack/postgresql.jpg"];
 			gap: 12px;
 		}
 	}
-	.postgreComponen {
+	.jasperReportComponen {
 		height: 200px;
 		width: auto;
 	}

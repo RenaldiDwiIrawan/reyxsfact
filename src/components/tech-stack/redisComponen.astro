@@ -1,29 +1,24 @@
 ---
-const items = ["./tech-stack/postgresql.jpg"];
+const items = ["./tech-stack/redis_logo.jpg"];
 ---
 
-<div class="postgreComponen">
+<div class="redisComponen">
 	{
 		items.map((item) => (
-			<img
-				loading="lazy"
-				class="postgreComponen"
-				src={item}
-				alt="logo postgreSQL  "
-			/>
+			<img loading="lazy" class="redisComponen" src={item} alt="logo Redis " />
 		))
 	}
 </div>
 
 <style>
-	.postgreComponen {
+	.redisComponen {
 		display: flex;
 		justify-content: center;
 		gap: 12px;
 		cursor: auto;
 	}
 	@media (max-width: 768px) {
-		.postgreComponen {
+		.redisComponen {
 			display: flex;
 			width: 55%;
 			justify-content: left;
@@ -31,8 +26,8 @@ const items = ["./tech-stack/postgresql.jpg"];
 			gap: 12px;
 		}
 	}
-	.postgreComponen {
-		height: 200px;
+	.redisComponen {
 		width: auto;
+		height: 200px;
 	}
 </style>

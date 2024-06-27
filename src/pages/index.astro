@@ -11,6 +11,19 @@ import Contact from "../components/Contact.astro";
 import Java from "../components/tech-stack/javaComponen.astro";
 import Spring from "../components/tech-stack/springComponen.astro";
 import Pgadmin from "../components/tech-stack/postgreComponen.astro";
+import Kafka from "../components/tech-stack/kafkaComponen.astro";
+import Redis from "../components/tech-stack/redisComponen.astro";
+import AndroidStudio from "../components/tech-stack/androidStudioComponen.astro";
+import Firebase from "../components/tech-stack/firebaseComponen.astro";
+import Git from "../components/tech-stack/gitComponen.astro";
+import Jasper from "../components/tech-stack/jasperComponen.astro";
+import MicroService from "../components/tech-stack/microServiceComponen.astro";
+import MongoDB from "../components/tech-stack/mongoDBComponen.astro";
+import Postman from "../components/tech-stack/postmanComponen.astro";
+import RestApi from "../components/tech-stack/restapiComponen.astro";
+import Swagger from "../components/tech-stack/swaggerComponen.astro";
+import ZK from "../components/tech-stack/zkComponen.astro";
+
 //Project Components
 import Python from "../components/Python.astro";
 // import Arphone from "../components/fun-proyek/arphone.astro";
@@ -80,6 +93,7 @@ import ShadowPorto from "../components/ShadowPorto.astro";
 			<h2
 				class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white mb-2"
 			>
+				<br />
 				Tech Stack
 			</h2>
 			<div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -119,17 +133,106 @@ import ShadowPorto from "../components/ShadowPorto.astro";
 						</div>
 					</Card>
 				</div>
-				<!-- <div class="">
-					<Card href="new" title="New" body="New." tags="new">
+
+				<div class="">
+					<Card
+						href="kafka"
+						title="Apache Kafka"
+						body="Platform streaming open-source yang memungkinkan penanganan dan pemrosesan data secara real-time dengan skalabilitas dan keandalan tinggi."
+						tags="kafka"
+					>
 						<div class="max-w-full">
-							<PostgreSql />
+							<Kafka />
 						</div>
 					</Card>
-				</div> -->
+				</div>
+
+				<div class="">
+					<Card
+						href="redis"
+						title="Redis"
+						body="Penyimpanan data in-memory open-source yang sangat cepat, digunakan sebagai basis data, cache, dan message broker."
+						tags="redis"
+					>
+						<div class="max-w-full">
+							<Redis />
+						</div>
+					</Card>
+				</div>
+				<div class="">
+					<Card href="mongodb" title="MongoDB" body="" tags="mongoDB">
+						<div class="max-w-full">
+							<MongoDB />
+						</div>
+					</Card>
+				</div>
+				<div class="">
+					<Card href="firebase" title="Firebase" body="" tags="firebase">
+						<div class="max-w-full">
+							<Firebase />
+						</div>
+					</Card>
+				</div>
+				<div class="">
+					<Card href="git" title="Git" body="" tags="Git">
+						<div class="max-w-full">
+							<Git />
+						</div>
+					</Card>
+				</div>
+				<div class="">
+					<Card
+						href="jasperReport"
+						title="Jasper Report"
+						body=""
+						tags="jasper Report"
+					>
+						<div class="max-w-full">
+							<Jasper />
+						</div>
+					</Card>
+				</div>
+				<div class="">
+					<Card
+						href="microService"
+						title="MicroService"
+						body=""
+						tags="microService"
+					>
+						<div class="max-w-full">
+							<MicroService />
+						</div>
+					</Card>
+				</div>
+				<div class="">
+					<Card href="postman" title="Postman" body="" tags="postman">
+						<div class="max-w-full">
+							<Postman />
+						</div>
+					</Card>
+				</div>
+				<div class="">
+					<Card href="restapi" title="restApi" body="" tags="restApi">
+						<div class="max-w-full">
+							<RestApi />
+						</div>
+					</Card>
+				</div>
+				<div class="">
+					<Card href="swagger" title="Swagger" body="" tags="swagger">
+						<div class="max-w-full">
+							<Swagger />
+						</div>
+					</Card>
+				</div>
+				<div class="">
+					<Card href="zk" title="ZK" body="" tags="zk">
+						<div class="max-w-full">
+							<ZK />
+						</div>
+					</Card>
+				</div>
 			</div>
-			<!-- <div class="my-8 bg-black">
-				<CTA />
-			</div> -->
 
 			<div class="my-8">
 				<Contact />

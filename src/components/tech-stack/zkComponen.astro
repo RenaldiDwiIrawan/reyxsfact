@@ -1,29 +1,24 @@
 ---
-const items = ["./tech-stack/postgresql.jpg"];
+const items = ["./tech-stack/zk.jpg"];
 ---
 
-<div class="postgreComponen">
+<div class="zkComponen">
 	{
 		items.map((item) => (
-			<img
-				loading="lazy"
-				class="postgreComponen"
-				src={item}
-				alt="logo postgreSQL  "
-			/>
+			<img loading="lazy" class="zkComponen" src={item} alt="logo zk " />
 		))
 	}
 </div>
 
 <style>
-	.postgreComponen {
+	.zkComponen {
 		display: flex;
 		justify-content: center;
 		gap: 12px;
 		cursor: auto;
 	}
 	@media (max-width: 768px) {
-		.postgreComponen {
+		.zkComponen {
 			display: flex;
 			width: 55%;
 			justify-content: left;
@@ -31,7 +26,7 @@ const items = ["./tech-stack/postgresql.jpg"];
 			gap: 12px;
 		}
 	}
-	.postgreComponen {
+	.zkComponen {
 		height: 200px;
 		width: auto;
 	}

@@ -1,29 +1,29 @@
 ---
-const items = ["./tech-stack/postgresql.jpg"];
+const items = ["./tech-stack/postman-logo.jpg"];
 ---
 
-<div class="postgreComponen">
+<div class="postmanComponen">
 	{
 		items.map((item) => (
 			<img
 				loading="lazy"
-				class="postgreComponen"
+				class="postmanComponen"
 				src={item}
-				alt="logo postgreSQL  "
+				alt="logo postman "
 			/>
 		))
 	}
 </div>
 
 <style>
-	.postgreComponen {
+	.postmanComponen {
 		display: flex;
 		justify-content: center;
 		gap: 12px;
 		cursor: auto;
 	}
 	@media (max-width: 768px) {
-		.postgreComponen {
+		.postmanComponen {
 			display: flex;
 			width: 55%;
 			justify-content: left;
@@ -31,7 +31,7 @@ const items = ["./tech-stack/postgresql.jpg"];
 			gap: 12px;
 		}
 	}
-	.postgreComponen {
+	.postmanComponen {
 		height: 200px;
 		width: auto;
 	}
