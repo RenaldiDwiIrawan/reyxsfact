@@ -6,6 +6,7 @@ import Heading from "../components/Heading.astro";
 // import CustomImageScroll from "../components/CustomImageScroll.astro";
 import CTA from "../components/CTA.astro";
 import Contact from "../components/Contact.astro";
+import Social from "../components/supported/Social.astro";
 
 //Tech Stack components
 import Java from "../components/tech-stack/javaComponen.astro";
@@ -25,17 +26,18 @@ import Swagger from "../components/tech-stack/swaggerComponen.astro";
 import ZK from "../components/tech-stack/zkComponen.astro";
 
 //Project Components
-import Python from "../components/Python.astro";
 // import Arphone from "../components/fun-proyek/arphone.astro";
 import Arphone from "../components/arphone.astro";
 import MyFurniture from "../components/myFurniture.astro";
 import ShadowPorto from "../components/ShadowPorto.astro";
+const myUpdateResume =
+	"https://www.notion.so/renaldidwiirawan/Renaldi-Dwi-Irawan-be1c69cd9c894358ad33cc28a96ca827";
 ---
 
 <Layout title="Java Developer Portfolio">
 	<div id="contents">
 		<main class="container">
-			<div class="mb-16">
+			<div class="mb-10">
 				<br />
 				<Heading />
 				<br />
@@ -50,336 +52,360 @@ import ShadowPorto from "../components/ShadowPorto.astro";
 					environments. Always eager to learn new technologies and enhance my
 					skill set.
 				</p>
+				<!-- <br /> -->
+				<p class="mb-5 text-gray-300 md:text-lg">
+					<a href={myUpdateResume} target="_blank" class="underline inline"
+						>Click me
+					</a> for my update CV
+				</p>
 			</div>
 
-			<h2
-				class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white mb-2"
-			>
-				Fun Projects
-			</h2>
-			<div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
-				<div class="">
-					<Card
-						title="Arphone"
-						body="Mobile Apps Augmented Reality for Smartphone."
-						tags="arphone"
-						github="https://github.com/RenaldiDwiIrawan/ARPhone"
-					>
-						<Arphone />
-					</Card>
+			<div>
+				<h2
+					class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white mb-2"
+				>
+					Fun Projects
+				</h2>
+				<div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+					<div class="">
+						<Card
+							title="Arphone"
+							body="Mobile Apps Augmented Reality for Smartphone."
+							tags="arphone"
+							github="https://github.com/RenaldiDwiIrawan/ARPhone"
+						>
+							<Arphone />
+						</Card>
+					</div>
+					<div class="">
+						<Card
+							title="myFurniture"
+							body="Mobile Apps Augmented Reality for Furniture."
+							tags="myFurniture"
+							github="https://github.com/RenaldiDwiIrawan/theFurniture"
+						>
+							<MyFurniture />
+						</Card>
+					</div>
+					<div class="">
+						<Card
+							title="shadowPorto"
+							body="Website portofolio built with Astro and tailwind."
+							tags="shadowPorto"
+							github="https://github.com/RenaldiDwiIrawan/reyxsfact"
+						>
+							<ShadowPorto />
+						</Card>
+					</div>
 				</div>
-				<div class="">
-					<Card
-						title="myFurniture"
-						body="Mobile Apps Augmented Reality for Furniture."
-						tags="myFurniture"
-						github="https://github.com/RenaldiDwiIrawan/theFurniture"
-					>
-						<MyFurniture />
-					</Card>
-				</div>
-				<div class="">
-					<Card
-						title="shadowPorto"
-						body="Website portofolio built with Astro and tailwind."
-						tags="shadowPorto"
-						github="https://github.com/RenaldiDwiIrawan/reyxsfact"
-					>
-						<ShadowPorto />
-					</Card>
-				</div>
-			</div>
 
-			<h2
-				class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white mb-2"
-			>
+				<h2
+					class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white mb-2"
+				>
+					<br />
+					Tech Stack
+				</h2>
+				<div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+					<div class="">
+						<Card
+							href="java"
+							title="Java"
+							body="I have been using the Java language for 2 years. In this period, I have developed various applications and systems, mastered the concepts of object-oriented programming as well as API development and integration with third-party systems."
+							tags="java"
+						>
+							<!-- <br /> -->
+							<div class="max-w-full">
+								<!-- <Java /> -->
+							</div>
+						</Card>
+					</div>
+					<div class="">
+						<Card
+							href="spring"
+							title="SpringBoot"
+							body="I have been using Spring Boot in my backend application development, utilizing this framework to build lightweight and fast applications. Spring Boot allows me to create applications that are easy to set up and maintenance, and provides various features for more efficient development."
+							tags="Spring"
+						>
+							<!-- <br /> -->
+							<div class="max-w-full">
+								<!-- <Spring /> -->
+							</div>
+						</Card>
+					</div>
+					<div class="">
+						<Card
+							href="postgre"
+							title="PostgreSql"
+							body="I have experience using PostgreSQL as a relational database management system. In application development, I rely on PostgreSQL to handle complex database operations, ensure data integrity, and optimize query performance for large scale. PostgreSQL also allows me to implement strong data security features."
+							tags="postgre"
+						>
+							<!-- <br /> -->
+							<div class="max-w-full">
+								<!-- <Pgadmin /> -->
+							</div>
+						</Card>
+					</div>
+
+					<div class="">
+						<Card
+							href="kafka"
+							title="Apache Kafka"
+							body="I have used Apache Kafka in several projects, including setting it up from scratch to ready to use in a personal project. Apache Kafka allows me to manage large, real-time data streams, and ensure that data transmitted between systems remains consistent and organized."
+							tags="kafka"
+						>
+							<!-- <br /> -->
+							<div class="max-w-full">
+								<!-- <Kafka /> -->
+							</div>
+						</Card>
+					</div>
+
+					<div class="">
+						<Card
+							href="redis"
+							title="Redis"
+							body="I use Redis as an in-memory data storage system that is fast and efficient. Redis helps me enhance application performance by providing optimal caching and supporting various complex data structures."
+							tags="redis"
+						>
+							<!-- <br /> -->
+							<div class="max-w-full">
+								<!-- <Redis /> -->
+							</div>
+						</Card>
+					</div>
+					<div class="">
+						<Card
+							href="mongodb"
+							title="MongoDB"
+							body="I utilize MongoDB for managing flexible and large-scale NoSQL databases. MongoDB allows me to store and access data quickly, supporting dynamic data structures."
+							tags="mongoDB"
+						>
+							<!-- <br /> -->
+							<div class="max-w-full">
+								<!-- <MongoDB /> -->
+							</div>
+						</Card>
+					</div>
+					<div class="">
+						<Card
+							href="firebase"
+							title="Firebase"
+							body="I use Firebase to develop technical skills and implementation in my personal projects. Firebase provides various services such as authentication, real-time database, and storage, which helps speed up the application development process."
+							tags="firebase"
+						>
+							<!-- <br /> -->
+							<div class="max-w-full">
+								<!-- <Firebase /> -->
+							</div>
+						</Card>
+					</div>
+					<div class="">
+						<Card
+							href="git"
+							title="Git"
+							body="As a version control system, Git helps me manage source code, track changes, and collaborate with teams effectively. I use Git to ensure the integrity and consistent versioning of application code."
+							tags="Git"
+						>
+							<!-- <br /> -->
+							<div class="max-w-full">
+								<!-- <Git /> -->
+							</div>
+						</Card>
+					</div>
+					<div class="">
+						<Card
+							href="jasperReport"
+							title="Jasper Report"
+							body="I use Jasper Report for creating complex and structured reports. Jasper Report allows me to generate reports that can be customized to meet business needs, including integration with various data sources."
+							tags="jasper Report"
+						>
+							<!-- <br /> -->
+							<div class="max-w-full">
+								<!-- <Jasper /> -->
+							</div>
+						</Card>
+					</div>
+					<div class="">
+						<Card
+							href="androidStudio"
+							title="Android Studio"
+							body="I use Android Studio for developing mobile applications on the Android platform. Android Studio provides a complete development environment and the tools needed to build, test, and publish Android applications."
+							tags="Android Studio"
+						>
+							<!-- <br /> -->
+							<div class="max-w-full">
+								<!-- <AndroidStudio /> -->
+							</div>
+						</Card>
+					</div>
+					<div class="">
+						<Card
+							href="microService"
+							title="MicroService"
+							body="I implement microservices architecture to develop modular and scalable applications. Microservices allow me to develop, deploy, and manage services independently, enhancing application flexibility and performance."
+							tags="microService"
+						>
+							<!-- <br /> -->
+							<div class="max-w-full">
+								<!-- <MicroService /> -->
+							</div>
+						</Card>
+					</div>
+					<div class="">
+						<Card
+							href="postman"
+							title="Postman"
+							body="I use Postman for efficient and comprehensive API testing. Postman helps me create, test, and document APIs easily, ensuring that APIs function according to specifications."
+							tags="postman"
+						>
+							<!-- <br /> -->
+							<div class="max-w-full">
+								<!-- <Postman /> -->
+							</div>
+						</Card>
+					</div>
+					<div class="">
+						<Card
+							href="restapi"
+							title="restApi"
+							body="I develop RESTful APIs to ensure efficient communication between client and server. RESTful APIs allow me to build services that are easily accessible and integrable with various applications and systems."
+							tags="restApi"
+						>
+							<!-- <br /> -->
+							<div class="max-w-full">
+								<!-- <RestApi /> -->
+							</div>
+						</Card>
+					</div>
+					<div class="">
+						<Card
+							href="swagger"
+							title="Swagger"
+							body="I use Swagger to document and test APIs. Swagger provides an interactive interface that helps manage and understand developed APIs, facilitating testing and integration."
+							tags="swagger"
+						>
+							<!-- <br /> -->
+							<div class="max-w-full">
+								<!-- <Swagger /> -->
+							</div>
+						</Card>
+					</div>
+					<div class="">
+						<Card
+							href="zk"
+							title="ZK"
+							body="I use ZK for developing Java-based web applications. ZK provides a framework that enables the development of dynamic and responsive user interfaces using the MVVM (Model-View-ViewModel) concept."
+							tags="zk"
+						>
+							<!-- <br /> -->
+							<div class="max-w-full">
+								<!-- <ZK /> -->
+							</div>
+						</Card>
+					</div>
+				</div>
+
 				<br />
-				Tech Stack
-			</h2>
-			<div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
-				<div class="">
-					<Card
-						href="java"
-						title="Java"
-						body="I have been using the Java language for 2 years. In this period, I have developed various applications and systems, mastered the concepts of object-oriented programming as well as API development and integration with third-party systems."
-						tags="java"
-					>
-					<!-- <br /> -->
-						<div class="max-w-full">
-							<!-- <Java /> -->
-						</div>
-					</Card>
+				<div class="flex justify-center mb-16">
+					<Social />
 				</div>
-				<div class="">
-					<Card
-						href="spring"
-						title="SpringBoot"
-						body="I have been using Spring Boot in my backend application development, utilizing this framework to build lightweight and fast applications. Spring Boot allows me to create applications that are easy to set up and maintenance, and provides various features for more efficient development."
-						tags="Spring"
-					>
-					<!-- <br /> -->
-						<div class="max-w-full">
-							<!-- <Spring /> -->
-						</div>
-					</Card>
-				</div>
-				<div class="">
-					<Card
-						href="postgre"
-						title="PostgreSql"
-						body="I have experience using PostgreSQL as a relational database management system. In application development, I rely on PostgreSQL to handle complex database operations, ensure data integrity, and optimize query performance for large scale. PostgreSQL also allows me to implement strong data security features."
-						tags="postgre"
-					>
-					<!-- <br /> -->
-						<div class="max-w-full">
-							<!-- <Pgadmin /> -->
-						</div>
-					</Card>
-				</div>
-
-				<div class="">
-					<Card
-						href="kafka"
-						title="Apache Kafka"
-						body="I have used Apache Kafka in several projects, including setting it up from scratch to ready to use in a personal project. Apache Kafka allows me to manage large, real-time data streams, and ensure that data transmitted between systems remains consistent and organized."
-						tags="kafka"
-					>
-					<!-- <br /> -->
-						<div class="max-w-full">
-							<!-- <Kafka /> -->
-						</div>
-					</Card>
-				</div>
-
-				<div class="">
-					<Card
-						href="redis"
-						title="Redis"
-						body="I use Redis as an in-memory data storage system that is fast and efficient. Redis helps me enhance application performance by providing optimal caching and supporting various complex data structures."
-						tags="redis"
-					>
-					<!-- <br /> -->
-						<div class="max-w-full">
-							<!-- <Redis /> -->
-						</div>
-					</Card>
-				</div>
-				<div class="">
-					<Card href="mongodb"
-					title="MongoDB"
-					body="I utilize MongoDB for managing flexible and large-scale NoSQL databases. MongoDB allows me to store and access data quickly, supporting dynamic data structures." tags="mongoDB">
-						<!-- <br /> -->
-						<div class="max-w-full">
-							<!-- <MongoDB /> -->
-						</div>
-					</Card>
-				</div>
-				<div class="">
-					<Card href="firebase"
-					title="Firebase"
-					body="I use Firebase to develop technical skills and implementation in my personal projects. Firebase provides various services such as authentication, real-time database, and storage, which helps speed up the application development process."
-					tags="firebase">
-						<!-- <br /> -->
-						<div class="max-w-full">
-							<!-- <Firebase /> -->
-						</div>
-					</Card>
-				</div>
-				<div class="">
-					<Card href="git"
-					title="Git"
-					body="As a version control system, Git helps me manage source code, track changes, and collaborate with teams effectively. I use Git to ensure the integrity and consistent versioning of application code."
-					tags="Git">
-						<!-- <br /> -->
-						<div class="max-w-full">
-							<!-- <Git /> -->
-						</div>
-					</Card>
-				</div>
-				<div class="">
-					<Card
-						href="jasperReport"
-						title="Jasper Report"
-						body="I use Jasper Report for creating complex and structured reports. Jasper Report allows me to generate reports that can be customized to meet business needs, including integration with various data sources."
-						tags="jasper Report"
-					>
-					<!-- <br /> -->
-						<div class="max-w-full">
-							<!-- <Jasper /> -->
-						</div>
-					</Card>
-				</div>
-				<div class="">
-					<Card
-						href="androidStudio"
-						title="Android Studio"
-						body="I use Android Studio for developing mobile applications on the Android platform. Android Studio provides a complete development environment and the tools needed to build, test, and publish Android applications."
-						tags="Android Studio"
-					>
-					<!-- <br /> -->
-						<div class="max-w-full">
-							<!-- <AndroidStudio /> -->
-						</div>
-					</Card>
-				</div>
-				<div class="">
-					<Card
-						href="microService"
-						title="MicroService"
-						body="I implement microservices architecture to develop modular and scalable applications. Microservices allow me to develop, deploy, and manage services independently, enhancing application flexibility and performance."
-						tags="microService"
-					>
-					<!-- <br /> -->
-						<div class="max-w-full">
-							<!-- <MicroService /> -->
-						</div>
-					</Card>
-				</div>
-				<div class="">
-					<Card href="postman"
-					title="Postman"
-					body="I use Postman for efficient and comprehensive API testing. Postman helps me create, test, and document APIs easily, ensuring that APIs function according to specifications."
-					tags="postman">
-						<!-- <br /> -->
-						<div class="max-w-full">
-							<!-- <Postman /> -->
-						</div>
-					</Card>
-				</div>
-				<div class="">
-					<Card href="restapi"
-					title="restApi"
-					body="I develop RESTful APIs to ensure efficient communication between client and server. RESTful APIs allow me to build services that are easily accessible and integrable with various applications and systems."
-					tags="restApi">
-						<!-- <br /> -->
-						<div class="max-w-full">
-							<!-- <RestApi /> -->
-						</div>
-					</Card>
-				</div>
-				<div class="">
-					<Card href="swagger"
-					title="Swagger"
-					body="I use Swagger to document and test APIs. Swagger provides an interactive interface that helps manage and understand developed APIs, facilitating testing and integration."
-					tags="swagger">
-						<!-- <br /> -->
-						<div class="max-w-full">
-							<!-- <Swagger /> -->
-						</div>
-					</Card>
-				</div>
-				<div class="">
-					<Card href="zk"
-					title="ZK"
-					body="I use ZK for developing Java-based web applications. ZK provides a framework that enables the development of dynamic and responsive user interfaces using the MVVM (Model-View-ViewModel) concept."
-					tags="zk">
-						<!-- <br /> -->
-						<div class="max-w-full">
-							<!-- <ZK /> -->
-						</div>
-					</Card>
-				</div>
-			</div>
-
-			<div class="my-8">
-				<Contact />
 			</div>
 		</main>
 	</div>
+
+	<style is:global>
+		main {
+			margin: auto;
+			padding: 0.75rem;
+			width: 1100px;
+			max-width: 100%;
+			color: white;
+			line-height: 1.6;
+		}
+		.project-image {
+			max-width: 100% !important;
+			overflow: hidden;
+		}
+		.project-cards {
+		}
+		.video-wrapper {
+			background: #111111;
+			padding: calc(1.5rem - 1px);
+			line-height: 1.4;
+			border-radius: 8px;
+			margin-bottom: 2rem;
+		}
+		.project-column > div {
+			max-width: 100%;
+			overflow: hidden;
+		}
+		.projects-alt > li {
+			gap: 1rem !important;
+		}
+		.astro-a {
+			position: absolute;
+			top: -32px;
+			left: 50%;
+			transform: translatex(-50%);
+			width: 220px;
+			height: auto;
+			z-index: -1;
+		}
+
+		.text-gradient {
+			background-image: var(--accent-gradient);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-size: 400%;
+			background-position: 0%;
+			font-size: 2.75rem;
+		}
+		.instructions {
+			margin-bottom: 2rem;
+			border: 1px solid rgba(var(--accent-light), 25%);
+			background: linear-gradient(
+				rgba(var(--accent-dark), 66%),
+				rgba(var(--accent-dark), 33%)
+			);
+			padding: 1.5rem;
+			border-radius: 8px;
+		}
+		.instructions code {
+			font-size: 0.8em;
+			font-weight: bold;
+			background: rgba(var(--accent-light), 12%);
+			color: rgb(var(--accent-light));
+			border-radius: 4px;
+			padding: 0.3em 0.4em;
+		}
+		.instructions strong {
+			color: rgb(var(--accent-light));
+		}
+		.link-card-grid {
+			display: grid;
+			gap: 0;
+			padding: 0;
+		}
+		.read-more {
+			color: #fff;
+		}
+		details {
+			position: relative;
+			top: -1px;
+			margin-top: 0;
+			margin-bottom: 1rem;
+			padding: 1rem;
+			border-radius: 0 0 8px 8px;
+			max-width: 900px;
+		}
+		details > div {
+			max-width: 830px;
+		}
+
+		summary:hover {
+			cursor: pointer;
+		}
+	</style>
+
+	<script></script>
 </Layout>
-
-<style is:global>
-	main {
-		margin: auto;
-		padding: 0.75rem;
-		width: 1100px;
-		max-width: 100%;
-		color: white;
-		line-height: 1.6;
-	}
-	.project-image {
-		max-width: 100% !important;
-		overflow: hidden;
-	}
-	.project-cards {
-	}
-	.video-wrapper {
-		background: #111111;
-		padding: calc(1.5rem - 1px);
-		line-height: 1.4;
-		border-radius: 8px;
-		margin-bottom: 2rem;
-	}
-	.project-column > div {
-		max-width: 100%;
-		overflow: hidden;
-	}
-	.projects-alt > li {
-		gap: 1rem !important;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-		font-size: 2.75rem;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(
-			rgba(var(--accent-dark), 66%),
-			rgba(var(--accent-dark), 33%)
-		);
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		gap: 0;
-		padding: 0;
-	}
-	.read-more {
-		color: #fff;
-	}
-	details {
-		position: relative;
-		top: -1px;
-		margin-top: 0;
-		margin-bottom: 1rem;
-		padding: 1rem;
-		border-radius: 0 0 8px 8px;
-		max-width: 900px;
-	}
-	details > div {
-		max-width: 830px;
-	}
-
-	summary:hover {
-		cursor: pointer;
-	}
-</style>
-
-<script></script>
