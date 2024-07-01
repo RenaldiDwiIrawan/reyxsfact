@@ -1,12 +1,12 @@
 ---
 import { Image } from "astro:assets";
-import shadowPorto from "../assets/fun-project/logo-shadowPorto.jpg";
+import prevenIT from "../../assets/fun-project/logo-PrevenIT.jpg";
 ---
 
-<div>
+<div class="flex justify-center mt-5">
 	<Image
 		class="project-image border border-black"
-		src={shadowPorto}
+		src={prevenIT}
 		alt="screen shot of python scripts running in the terminal"
 		densities={[1, 2, 3]}
 	/>
@@ -14,7 +14,7 @@ import shadowPorto from "../assets/fun-project/logo-shadowPorto.jpg";
 
 <style>
 	.project-image {
-		width: 100%;
-		height: auto;
+		width: 70%;
+		height: 70%;
 	}
 </style>

@@ -1,12 +1,12 @@
 ---
 import { Image } from "astro:assets";
-import myFirstAR from "../assets/fun-project/androidStudio.jpg";
+import baseProject from "../../assets/fun-project/java.jpg";
 ---
 
-<div>
+<div class="flex justify-center mt-10">
 	<Image
 		class="project-image border border-black"
-		src={myFirstAR}
+		src={baseProject}
 		alt="screen shot of python scripts running in the terminal"
 		densities={[1, 2, 3]}
 	/>
@@ -14,7 +14,7 @@ import myFirstAR from "../assets/fun-project/androidStudio.jpg";
 
 <style>
 	.project-image {
-		width: 100%;
+		width: auto;
 		height: auto;
 	}
 </style>
